@@ -2,36 +2,87 @@
 <!--This website template was created by: Latoya Hayes-->
 <html lang="en">
 <head>
-<!---Will place a logo in header once I learn how;)-->    
-<title>The Creative Collective</title>
+<!---Will place a logo in header once I learn how;)--> 
+	<title>The Creative Collective</title>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="css/styles.css">
+	<style>
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#hero{background-image: url(images/hero-image.jpg); height: 50vh; color:floralwhite;}
+#hero h1{text-align: center; padding-top: 100px; font-size: 100px;}
+#hero p{text-align: center; font-size: 30px;}
+</style>
 </head>
 <body>
 	<div id="Home"></div>
 <!---Use the header area  for the website name or logo-->
 <header>
-	<img src="images/thecclogo.jpg" alt="cclogo">
-	<h1 style="text-align:left;">The Creative Collective</h1>
-
-    <h3 style="text-align:left;">Where the world of adventure and learning collide</h3>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+              <li class="dropdown"><a href="#">Classes</a>
+                <div class="dropdown-content">
+                    <a href="class1/index.html">Class 1</a>
+                    <a href="class2/index.html">Class 2</a>
+                    <a href="class3/index.html">Class 3</a>
+                    <a href="class4/index.html">Class 4</a>
+                    <a href="class5/index.html">Class 5</a>
+                    <a href="class6/index.html">Class 6</a>
+                  </div>
+              </div>
+              </li>
+        </ul>
+    </nav>
+    
 </header>
 
 <!--Use the nav area to add hyperlinks to other pages within the website-->
-<nav>
-    <div>
-	<ul>
-		<li><a href="index.html">Home</a></li> 
-		<li><a href="about.html">About Us</a></li> 
-		<li><a href="fAQs.html">FAQS</a></li>
-		<li><a href="contact.html">Contact Us</a></li>
-	</ul>
-	<p></p>
-</div>
-	</nav>
+
+
 <!--hero image-->
+
 <div id="hero">
-	<img src="images/hero-image.jpg" alt="hero imago">
+	<div>
+        <h1>The Creative Collective</h1>
+        <p>"Where the world of adventure and learning collide"</p>
+    </div>	
 </div>
 	
 <!--Use the main area to add the main content of the webpage-->
@@ -42,11 +93,11 @@
 
 <!--Use the footer area to add webpage footer content-->
 
-<p>At Creative Collective our goal is to help you create a learning experience that is balanced and practical while encouraging your little one to be self-motivated and eager to learn.<span class="action"> Learn how to get started!</span></p>
+<p style="text-align: center;">At Creative Collective our goal is to help you create a learning experience that is balanced and practical while encouraging your little one to be self-motivated and eager to learn.<span class="action"> Learn how to get started!</span></p>
 
 <footer>
     <p>&copy; Copyright 2023. All Rights Reserved.</p>
-	<p><a href="mailto:hayeshomeschoolacademy@gmail.com">thecreativecollective.net</a></p>
+	<p><a href="mailto:hayeshomeschoolacademy@gmail.com">Email Me</a></p>
 
 </footer>
 
