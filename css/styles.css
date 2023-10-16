@@ -7,6 +7,15 @@ body{
 background-color:#f5f1e6;
 }
 
+#logo {
+    display: inline-block;
+    margin: 20px; /
+    float: left;
+    height: 60px;
+    width: auto; 
+    border-radius: 50%; 
+  }
+
 img {
 max-width: 100%
 display: block;
