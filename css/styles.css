@@ -1,115 +1,58 @@
-body, header, nav, main, footer, h1, div, img{ 
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-body{
-background-color:#f5f1e6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="images/thecclogo.jpg">
+    <link rel="icon"type="image/jpg" sizes="32x32" href="images/thecclogo.jpg">
+    <link rel="apple-touch-icon"sizes="180x180" href="images/thecclogo.jpg">
+    <link rel="icon"sizes="192x192" href="images/android-chrome-192.png">
+    </head>
 
-#logo {
-    display: inline-block;
-    margin: 20px; /
-    float: left;
-    height: 60px;
-    width: auto; 
-    border-radius: 50%; 
-  }
+    <body>
+        
+        <nav class+"mobile-nav">
+            <div id="menu-links> 
+    
+    <!---Use the header area  for the website name or logo-->
+    <header>
+        <h1 style="text-align:center;">Wanderers Wonder</h1>
+        <h3 style="text-align:center;">Your Next Adventure Awaits</h3>
+        <nav>
+            
+                <div class="nav__link hide">
+                    <a href="index.html">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">NEWS</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">CLASSES</a> 
+                        <div class="dropdown-content">
+                            <a href="class 1/index.html"> Class 1</a>
+                            <a href="class 2/index.html"> Class 2</a>
+                            <a href="class 3/index.html"> Class 3</a>
+                            <a href="class 4/index.html"> Class 4</a>
+                            <a href="class 5/index.html"> Class 5</a>
 
-img {
-max-width: 100%
-display: block;
-}
-
-header{
-      position: -webkit-sticky;
-      position:sticky
-      top:0;
-      background: color #000;
-      height: 190px;
-}
-
-header img{
-    margin:0 auto
-}
-
-nav{
-        width:70%;
-    float:right;
-margin:5em 3em 0 0;
-}
-
-nav ul  {
-    list-style-type: none;
-margin: 0;
-    text-align: right
-    ;}
-
-nav li{
-    display: inline-block;
-    font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serifSS;}
-nav li a{
-    display: block;
-    color:black;
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
-}
-
-
-main {
-clear:left;
-    background-color: #fff;
-    padding:1%;
-    font-size: :1.25%;
-}
-
-.action{
-    font-size: 1.3em;
-    color: #f5f1e6;
-    font-weight: b
-}
-
-#eat, #play, #learn {
-    width: 29%;
-    float: left;
-    margin: 0 %;
-}
-#about {
-    clear:left;
-    border-top:1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1.5em;% 2%
-}
-
-#about dt{
-    font: bold;
-}
-
-#about dd{
-    padding: 1% 1% 2% 0;
-}
-
-#contact{
-    text-align: center;
-}
-
-#contact a{
-    color: #000;
-    text-decoration: none;
-}
-footer p { 
-    font-size: 1.00em;
-    text-align: center;
-    color: #fff
-    padding 0 1em
-}
-.map{
-    border: 8px solid #000;
-}
-footer p a{
-    color:#000000;
-    text text-decoration: none;
-}
+                    </div>
+            </div>
+            <a class="menu-icon" onclick=""hamburger()"></a>"
+                <div>&#9776;</div>    
+        
+    </nav>
+        
+    </header>
+    
+    <!--Use the nav area to add hyperlinks to other pages within the website-->
+    
+    <main>
+        <div id="contact.html">
+    
+            <br>
+            <h2>Ready to Travel? <br>Let us help you today.</h2>
+             <h4>Email us at: <wandererswonder class="net"></wandererswonder></h4>
+           
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.028204422117!2d-84.0179439242751!3d34.01748697317007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f595e29908a499%3A0xd3861f03dfa9f99c!2sCollins%20Hill%20Park!5e0!3m2!1sen!2sus!4v1695669463163!5m2!1sen!2sus" width="600" height="450"class="map"></iframe>
+            </div>
+    
+    </main>
