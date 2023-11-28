@@ -1,58 +1,347 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title></title>
-	<meta charset="utf-8">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="images/thecclogo.jpg">
-    <link rel="icon"type="image/jpg" sizes="32x32" href="images/thecclogo.jpg">
-    <link rel="apple-touch-icon"sizes="180x180" href="images/thecclogo.jpg">
-    <link rel="icon"sizes="192x192" href="images/android-chrome-192.png">
-    </head>
+body, header, nav, main, footer, img, h1, ul, section, aside, figure, figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 
-    <body>
-        
-        <nav class+"mobile-nav">
-            <div id="menu-links> 
-    
-    <!---Use the header area  for the website name or logo-->
-    <header>
-        <h1 style="text-align:center;">Wanderers Wonder</h1>
-        <h3 style="text-align:center;">Your Next Adventure Awaits</h3>
-        <nav>
-            
-                <div class="nav__link hide">
-                    <a href="index.html">HOME</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">NEWS</a>
-                    <a href="#">CONTACT</a>
-                    <a href="#">CLASSES</a> 
-                        <div class="dropdown-content">
-                            <a href="class 1/index.html"> Class 1</a>
-                            <a href="class 2/index.html"> Class 2</a>
-                            <a href="class 3/index.html"> Class 3</a>
-                            <a href="class 4/index.html"> Class 4</a>
-                            <a href="class 5/index.html"> Class 5</a>
+body {
+  font-family: sans-serif;
+}
 
-                    </div>
-            </div>
-            <a class="menu-icon" onclick=""hamburger()"></a>"
-                <div>&#9776;</div>    
-        
-    </nav>
-        
-    </header>
-    
-    <!--Use the nav area to add hyperlinks to other pages within the website-->
-    
-    <main>
-        <div id="contact.html">
-    
-            <br>
-            <h2>Ready to Travel? <br>Let us help you today.</h2>
-             <h4>Email us at: <wandererswonder class="net"></wandererswonder></h4>
-           
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.028204422117!2d-84.0179439242751!3d34.01748697317007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f595e29908a499%3A0xd3861f03dfa9f99c!2sCollins%20Hill%20Park!5e0!3m2!1sen!2sus!4v1695669463163!5m2!1sen!2sus" width="600" height="450"class="map"></iframe>
-            </div>
-    
-    </main>
+div {
+  resize: vertical;
+  overflow: auto;
+}
+section {
+  display: block;
+}
+
+figure {
+  position:relative;
+  max-width:175px;
+  margin: 2% auto;
+}
+
+figcaption {
+  Position:absolute;
+  bottom: 0;
+  background: rgba(54, 132, 106, 0.7);
+  color: #fff;
+  width: 50%;
+  padding: 5% 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  
+}
+
+img{
+  border: 1px solid #f9f9f9
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+}
+
+header{
+  width: 100vw;
+}
+
+header .header_text{
+  text-align: center;
+  padding: 45px;
+  color: rgb(221, 218, 8);
+  font-size: xx-large;
+}
+
+header {
+  width: 100vw;
+  height: 45vh; 
+  background-image: url("../images/Background.png"); 
+  background-repeat: no-repeat, no-repeat; 
+  background-size: cover;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+img{
+  max: width 100%;
+  display:block;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+aside{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight:  bold;
+  color: #444;
+  text-shadow: 3px 3px 10px #f9f9f9;
+  grid-column: 1 / span 4;
+}
+
+.row{
+  position:absolute;
+  display: flex;
+  height:50%;
+  width:100%;
+}
+
+.column-text {
+  width: 100%;
+  object-fit: contain;
+  float:right;
+  text-shadow:none;
+  grid-column: 0;
+}
+
+/* nav  */
+
+.nav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+
+li{list-style: none; display: inline;}
+
+.logo {
+  font-size: 1.5rem;
+  color: rgb(233, 233, 242);
+  padding-left: 20px;
+}
+
+.logo span{
+  font-size: 2rem;
+  color: rgb(201, 201, 220);
+} 
+
+
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(252, 248, 248);
+}
+
+.nav__link {
+  position: fixed;
+  width: 94%;
+  top: 5rem;
+  left: 18px;
+  background-color: rgb(138, 101, 156);
+  padding: 20px;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav__link a:hover {
+  background-color: rgb(251, 246, 246);
+  color: rgb(3, 3, 3);
+}
+
+.hide {
+  display: none;
+}
+
+
+
+/* Drop Down */  
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: 16px;  
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.nav a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+.dropdown:hover.dropdown-content {
+display: block;
+}
+
+      /* Dropdown */
+      /* .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #ddd;}
+
+      .dropdown:hover .dropdown-content {display: block;}
+
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      */
+
+
+/* Desktop */
+@media screen and (min-width: 600px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer Style */
+aside {
+  grid-column:1 / span 2;
+}
+
+footer .copyright{width: 100vw; text-align: center;}
+.row-footer h1{
+  text-align: center;
+}
+.copyright{
+  width: 100vw;
+  text-align: center;
+}
+#footer {
+position: relative;
+bottom: 0;
+width: 100%;
+height: 400%;   /* Height of the footer */
+background: rgb(228, 228, 21);
+}
+
+.linkedin{
+  width:2vw;
+  text-align;
+}
+
+.facebook {
+  width: 2vw;
+  text-align;
+}
+.instagram{
+  width:2vw;
+  text-align;
+}
+
+ /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+  @media all and (min: width 320px) and (max-width:480 px){
+    body li {
+      color:rgb(0, 153, 255)
+    }
+  }
+
+  @media all and (min: width 480px) and (max-width:768 px){
+    body li {
+      background-color:rgb(219, 230, 230)
+    }
+  }
+
+  @media all and (min: width 769px) and (max-width:1279 px){
+    nav li {
+      background-color:rgb(219,230,230)
+    }
+  }
+
+  @media all and (min: width 1280px) 
+    body li {
+      color:rgb(0, 153, 255)
+    }
+  }
