@@ -1,118 +1,70 @@
 <!DOCTYPE html>
+    <!--Student Name: Latoya Hayes File name: Template.html Date:-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderers Wonder</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/favicon" href="/images/favicon.png">
-
-  
-
-
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <a class="logo" href="images/logo.png"></a>
-       
-    
-            <a class="menu-icon" onclick="hamburger()">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </div>
-            </a>
-
-            <div class="nav__link hide">
-                <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a><li>
-            <li><a href="news.html">NEWS</a><li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li class="drowdown"><a href="#">Class</a>
-                <div class="dropdown-content">
-                    <a href="class 1/index.html"> Class 1</a>
-                    <a href="class 2/index.html"> Class 2</a>
-                    <a href="class 3/index.html"> Class 3</a>
-                    <a href="class 4/index.html"> Class 4</a>
-                    <a href="class 5/index.html"> Class 5</a>
-                    <a href="class 6/index.html"> Class 6</a>
-                    <a href="class 7/index.html"> Class 7</a>
-            </div>
-            </ul>
+    <div id="container"></div>
+           <!--Use the header area for the website name or logo-->
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </header>
+        </header>
+        <!--Use the nav area to add hyperlinks to other pages within the website-->
+        <nav>     
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                 <li><a href="news.html">News</a> </li>
+                 <li><a href="contact.html">Contact</a> <li> 
+                 <li><a href="class.html">Class </a></li>
+             </ul>
         </nav>
-        <div class="header_text">
-            <h1>Wanderers Wonder</h1>
-            <p>Your Next Adventure Awaits</p>
+        <!--Hero Image-->
+        <div id="hero">
+            <img src="images/background.jpg.jpg" alt="Background">
         </div>
-    </header>
 
-    <main>
-      <section class="grid">  
-        <figure class="frame">
-              <a href="news.html"><img src="images/destinations.png" alt="destination"></a>
-              <figcaption>Checkout our travel tips and destination and news write-ups </figcaption>
-        </figure>
+        <!--Use the main area to add the main content of the webpage-->
+        
+        <main>
+            <div id="mobile">
+            <p>I'd love to live vicariously through you. Let me help you plan your next trip</p>
+
+            <h3>If you struggle with deciding where to take your next trip then this blog is for you.</h3>
+
+            <p>We provide a FREE one-week membership so you can experience the benefits of our equipment and facility. This one-week trial gives you complete access to our equipment, training classes, and nutrition planning. Contact us today to start your free trial!</p>
+        </div>
+
+       
+        </main>
+        <div class="grid">
+            <figure class="frame">
+                <a href="news.html"><img src="images/destinations.png" alt="destination"></a>
+                <figcaption class="pic-text">Travel tips and News </figcaption>
+          </figure>
         <figure class="frame">
             <a href="about.html"><img src="images/sight-seeing.png" alt="sight-seeing"></a>
-            <figcaption>Find out who we are</figcaption>
+            <figcaption class="pic-text">Find out who we are</figcaption>
         </figure>
         <figure class="frame">
             <a href="contact.html"><img src="images/food-travel.png" alt="food-travel"></a>
-            <figcaption>Let us help you plan your next adventure</figcaption>
-          </figure>    
-        </section>
-    </main>
-
-
-    <!-- Place some information in the footer along with social media links -->
-    
-      <div class="row-footer">
-          <div class="column footer">
-            <h1>News</h1>
-             <ul>
-                <li><a href="https://www.travelpulse.com/news/entertainment/new-african-safari-park-experience-coming-to-georgia-in-2024">GA's African Safari Experience</a></li>
-                <li><a href="https://www.travelpulse.com/news/cruise/the-three-year-cruise-around-the-world-has-been-canceled">Three Year Cruise Cancelled</a></li>
-                <li><a href="https://www.nytimes.com/2023/11/24/travel/frontier-flight-refund-credit.html">Traveler's Trip Ruined</a></li>
-                <li><a href="https://www.msn.com/en-us/travel/news/it-s-time-to-limit-how-often-we-can-travel-abroad-carbon-passports-may-be-the-answer/ar-AA1kB6rP">Is Carbon Passports the answer?</a></li>
-              </ul>
-          </div>
-
-          <div class="row-footer">
-          <div class="column-footer"> 
-            <h1>Destinations</h1>
-              <ul>
-                <li><a href="https://www.miamiherald.com/living/travel/article272020222.html">Tropical Vacation</a></li>
-                <li><a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Best Places to Travel</a></li>
-                <li><a href="https://www.forbes.com/sites/laurabegleybloom/2023/10/04/bucket-list-travel-the-top-20-places-in-the-world-according-to-a-new-report/?sh=4fcff3931b40">Bucket List Travel</a></li>
-                <li><a href="https://www.travelandleisure.com/weekend-getaways-in-the-south-7098671">Weekend Getaways</a></li>
-             </ul>
-          </div>
-
-          <div class="row-footer">
-          <div class="column">
-            <h1>Food</h1>
-            <ul>
-              <li><a href="https://travel.usnews.com/features/all-inclusive-resorts-with-the-best-food">12 Resorts with Best Food</a></li>
-              <li><a href="https://www.wral.com/story/foodie-news-food-network-star-to-open-burger-restaurant-in-nc/21169584/">Food Network Star Opens Restaurants</a></li>
-              <li><a href="https://www.focusforhealth.org/the-american-food-supply-not-fit-for-european-consumption/">American vs Europe Food</a></li>
-              <li><a href="https://www.msn.com/en-us/foodanddrink/foodnews/birmingham-s-aww-shucks-food-truck-and-restaurant-now-offering-franchises/ar-AA1kBTKD">Aww Shucks food truck </a></li>
-            </ul>
-          </div>
-            
-            <a href="https://www.linkedin.com/"><img class="linkedin" src="images/logo-linkedin-icon.png" alt="logo-linkedin-icon"></a>
-            <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-logo.png" alt="facebook-logo"></a>
-            <a href="https://instagram.com/"><img class="instagram" src="images/instagram_logo.png" alt="instagram_logo"></p>
-          </div>
+            <figcaption class="pic-text">Contact Us</figcaption>
+          </figure> 
 
         </div>
-        <div class="copyright"> &copy; Copyright 2023. All rights reserved
-          <h4>WWW.noemail@student.com, Copyright 2023</h4>
-      </div>
-  </footer>
 
-    <script src="./javascript/script.js"></script>
+<!--Use the footer area to add webpage footer content-->
+        <footer>
+            <p> &copy;Copyright 2023. All Rights Reserved.</p>
+            <p><a href="mailto:latoya.hayes1121@gmail.com">latoya.hayes1121@gmail.com</a></p>
+        </footer>
+        <div>
 </body>
 </html>
