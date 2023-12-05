@@ -2,28 +2,76 @@
     <!--Student Name: Latoya Hayes File name: Template.html Date:-->
 <html lang="en">
 <head>
-    <title></title>
+    <title>Wanderers Wonder</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <meta name=“viewport” content=“width=device-width, initial-scale=1”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel=“shortcut icon” href="images/favicon (2).png">
+    <link rel=“icon” type=“image/png” sizes=“32x32” href="images/favicon (2).png">
+    <link rel=“apple-touch-icon” sizes=“180x180” href=“images/apple-touch-icon.png”>     
+    <link rel=“icon” sizes=“192x192” href=“images/android-chrome-192.png”>
 </head>
 <body>
     <div id="container"></div>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu">
+                <div id="menu-links">
+                        <a href="index.html"> Home</a>
+                         <a href="about.html"> About</a>
+                          <a href="news.html">News</a>
+                         <a href="contact.html">Contact</a> 
+                         <a href="class.html">Class </a>
+                         <li class="dropdown"><a href="#">Class</a>
+                            <div class="dropdown-content">
+                                 <a href="day 1/index.html">class 1</a>
+                              <a href="day 2/index.html">class 2</a>
+                              <a href="day 3/index.html"> class</a> 3</a>
+                              <a href="day 4/index.html">class 4</a>
+                              <a href="day 5/index.html">class 5</a>
+                              <a href="day 6/index.html">class 6</a>
+                              <a href="day 7/index.html">class 7</a>
+                              <a href="day 8/index.html">class 8</a>
+                              <a href="day 9/index.html">class 9</a>
+                              <a href="day 10/index.html">class 10</a>
+                              <a href="Day 11/index.html">class 11</a>
+                            </div></li>
+                    
+                </div>
+
+                <a class="menu-icon" onclick="hamburger">
+                    <div>&#9776;</div>
+                </a>
+        </nav>
            <!--Use the header area for the website name or logo-->
-        <header>
+        <header id="logo">
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+    
         </header>
-        </header>
-        <!--Use the nav area to add hyperlinks to other pages within the website-->
-        <nav>     
+        <!--Tablet, Desktop Nav-->
+        <nav class=“tablet-desktop”>     
             <ul>
                 <li><a href="index.html"> Home</a></li>
                 <li><a href="about.html"> About</a></li>
                  <li><a href="news.html">News</a> </li>
                  <li><a href="contact.html">Contact</a> <li> 
                  <li><a href="class.html">Class </a></li>
+                 <li class="dropdown"><a href="#">Class</a>
+                    <div class="dropdown-content">
+                         <a href="day 1/index.html">class 1</a>
+                      <a href="day 2/index.html">class 2</a>
+                      <a href="day 3/index.html"> class</a> 3</a>
+                      <a href="day 4/index.html">class 4</a>
+                      <a href="day 5/index.html">class 5</a>
+                      <a href="day 6/index.html">class 6</a>
+                      <a href="day 7/index.html">class 7</a>
+                      <a href="day 8/index.html">class 8</a>
+                      <a href="day 9/index.html">class 9</a>
+                      <a href="day 10/index.html">class 10</a>
+                      <a href="Day 11/index.html">class 11</a>
+                    </div></li>
              </ul>
         </nav>
         <!--Hero Image-->
@@ -62,9 +110,48 @@
 
 <!--Use the footer area to add webpage footer content-->
         <footer>
+            <div class="row-footer">
+                <div class="column footer">
+                  <h1>News</h1>
+                   <ul>
+                      <li><a href="https://www.travelpulse.com/news/entertainment/new-african-safari-park-experience-coming-to-georgia-in-2024">GA's African Safari Experience</a></li>
+                      <li><a href="https://www.travelpulse.com/news/cruise/the-three-year-cruise-around-the-world-has-been-canceled">Three Year Cruise Cancelled</a></li>
+                      <li><a href="https://www.nytimes.com/2023/11/24/travel/frontier-flight-refund-credit.html">Traveler's Trip Ruined</a></li>
+                      <li><a href="https://www.msn.com/en-us/travel/news/it-s-time-to-limit-how-often-we-can-travel-abroad-carbon-passports-may-be-the-answer/ar-AA1kB6rP">Is Carbon Passports the answer?</a></li>
+                    </ul>
+                </div>
+      
+                <div class="row-footer">
+                <div class="column-footer"> 
+                  <h1>Destinations</h1>
+                    <ul>
+                      <li><a href="https://www.miamiherald.com/living/travel/article272020222.html">Tropical Vacation</a></li>
+                      <li><a href="https://travel.usnews.com/rankings/worlds-best-vacations/">Best Places to Travel</a></li>
+                      <li><a href="https://www.forbes.com/sites/laurabegleybloom/2023/10/04/bucket-list-travel-the-top-20-places-in-the-world-according-to-a-new-report/?sh=4fcff3931b40">Bucket List Travel</a></li>
+                      <li><a href="https://www.travelandleisure.com/weekend-getaways-in-the-south-7098671">Weekend Getaways</a></li>
+                   </ul>
+                </div>
+      
+                <div class="row-footer">
+                <div class="column">
+                  <h1>Food</h1>
+                  <ul>
+                    <li><a href="https://travel.usnews.com/features/all-inclusive-resorts-with-the-best-food">12 Resorts with Best Food</a></li>
+                    <li><a href="https://www.wral.com/story/foodie-news-food-network-star-to-open-burger-restaurant-in-nc/21169584/">Food Network Star Opens Restaurants</a></li>
+                    <li><a href="https://www.focusforhealth.org/the-american-food-supply-not-fit-for-european-consumption/">American vs Europe Food</a></li>
+                    <li><a href="https://www.msn.com/en-us/foodanddrink/foodnews/birmingham-s-aww-shucks-food-truck-and-restaurant-now-offering-franchises/ar-AA1kBTKD">Aww Shucks food truck </a></li>
+                  </ul>
+                </div>
+                  
+                  <a href="https://www.linkedin.com/"><img class="linkedin" src="images/logo-linkedin-icon.png" alt="logo-linkedin-icon"></a>
+                  <a href="https://www.facebook.com/"><img class="facebook" src="images/facebook-logo.png" alt="facebook-logo"></a>
+                  <a href="https://instagram.com/"><img class="instagram" src="images/instagram_logo.png" alt="instagram_logo"></p>
+                </div>
+      
+              </div>
             <p> &copy;Copyright 2023. All Rights Reserved.</p>
             <p><a href="mailto:latoya.hayes1121@gmail.com">latoya.hayes1121@gmail.com</a></p>
         </footer>
         <div>
-</body>
+            <script src=“scripts/script.js”></script>
 </html>
