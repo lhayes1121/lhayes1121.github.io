@@ -35,16 +35,41 @@ aside{
 }
 
 /*style rule for header*/
-header {
-top: 0;
-background-color: #fff;
-height: 190px;
+header{
+    width: 100vw;
+}
+.header_text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -250%);
+    color: #000;
+    font-family: 'Playfair Display', serif;
 }
 
-
-header img {
-    margin: 0 auto;
+header{
+    width: 100vw;
+    height: 50vh; 
+    background-image: url("/images/background.jpg.jpg"); 
+    background-repeat: no-repeat, no-repeat; 
+    background-size: cover;
 }
+header h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 10em;
+	text-align: center;
+	padding-top: 150px
+}
+
+header h3 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 5em;
+	text-align: center;
+	padding-bottom: 150px;
+}
+
 /*style rules for hamburger menu*/
 .mobile-nav a {
     color: #09a08c;
@@ -78,8 +103,48 @@ header img {
     display: block;
     background-color: #a3a3a3;
 }	
-/*style rules for navigation area */
 
+.row {
+    position: relative;
+    display: flex;
+    height: 50%;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .column-text {
+      width: 100%;
+      object-fit: contain;
+      float: right;
+      text-shadow: none;
+      grid-column: 0;
+  }
+  
+  .column-image {
+      width: 100%;
+      height: 100%;
+      float: left;
+      margin: 0;
+  }
+  
+  figure {
+      position: relative;
+      max-width: 275px;
+      margin: 2% auto;
+  }
+  
+  figcaption {
+      position: absolute;
+      bottom: 0;
+      background: #f1786a;
+      color: white;
+      width: 100%;
+      padding: 5% 0;
+      text-align: center;
+      font-family: 'Merriweather', serif;
+      font-size: 1.5em;
+  }
+/*style rules for navigation area */
 
 
 /*show mobile class, hide tablet-desktop class and menu-links id*/
