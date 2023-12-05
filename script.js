@@ -5,5 +5,6 @@ function hamburger() {
 		menu.style.display = "none";
 	} else {
 		menu.style.display = "block";
+        logo.style.display= "none"
 	}
 }
