@@ -5,17 +5,48 @@
     -->
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="css/style.css">
         <title>Wanderers Wonder</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+        <link rel=“shortcut icon” href="images/favicon (2).png">
+        <link rel=“icon” type=“image/png” sizes=“32x32” href="images/favicon (2).png">
+        <link rel=“apple-touch-icon” sizes=“180x180” href=“images/apple-touch-icon.png”>     
+        <link rel=“icon” sizes=“192x192” href=“images/android-chrome-192.png”>
     </head>
 
     
     <body>
         <div id="container"></div>
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu">
+                <div id="menu-links">
+                    <a href="index.html"> Home</a>
+                    <a href="about.html"> About</a>
+                     <a href="news.html">News</a>
+                    <a href="contact.html">Contact</a> 
+                    <a href="class.html">Class </a>
+                    <li class="dropdown"><a href="#">Class</a>
+                       <div class="dropdown-content">
+                            <a href="day 1/index.html">class 1</a>
+                         <a href="day 2/index.html">class 2</a>
+                         <a href="day 3/index.html"> class</a> 3</a>
+                         <a href="day 4/index.html">class 4</a>
+                         <a href="day 5/index.html">class 5</a>
+                         <a href="day 6/index.html">class 6</a>
+                         <a href="day 7/index.html">class 7</a>
+                         <a href="day 8/index.html">class 8</a>
+                         <a href="day 9/index.html">class 9</a>
+                         <a href="day 10/index.html">class 10</a>
+                         <a href="Day 11/index.html">class 11</a>
+                       </div></li>
+                <a class="menu-icon">
+                    <div>&#9776;</div>
+                </a>
+        </nav>
         <!--Use the header area for the website name or logo-->
          <header>
             
@@ -33,6 +64,20 @@
                  <li><a href="news.html">News</a> </li>
                  <li><a href="contact.html">Contact</a> <li> 
                  <li><a href="class.html">Class </a></li>
+                 <li class="dropdown"><a href="#">Class</a>
+                    <div class="dropdown-content">
+                         <a href="day 1/index.html">class 1</a>
+                      <a href="day 2/index.html">class 2</a>
+                      <a href="day 3/index.html"> class</a> 3</a>
+                      <a href="day 4/index.html">class 4</a>
+                      <a href="day 5/index.html">class 5</a>
+                      <a href="day 6/index.html">class 6</a>
+                      <a href="day 7/index.html">class 7</a>
+                      <a href="day 8/index.html">class 8</a>
+                      <a href="day 9/index.html">class 9</a>
+                      <a href="day 10/index.html">class 10</a>
+                      <a href="Day 11/index.html">class 11</a>
+                    </div></li>
              </ul>
 
 
@@ -49,12 +94,49 @@
 
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.0280312027307!2d-84.01794392365284!3d34.01749141956348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f595e29908a499%3A0xd3861f03dfa9f99c!2sCollins%20Hill%20Park!5e0!3m2!1sen!2sus!4v1701456756256!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>  
             </div>
+
+            <div id=“form”>
+                <h2>Want to join our travel our travel team. Fill out form below</h2>
+                <form class=“form-grid”>
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for=“fName”>First Name:</label>
+                        <input type=“text” name=“fName” id=“fName” required>
+                        
+                        <label for=“lName”>Last Name:</label>
+                        <input type=“text” name=“lName” id=“lName” required>
+                        
+                        <label for=“email”>Email:</label> 
+                        <input type=“email” name=“email” id=“email” required><input type=“tel” id=“phone” name=“phone” required>
+                        
+                        <label for=“phone”>Phone:</label>
+                        <input type=“tel” id=“phone” name=“phone” required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+
+                        <p>I would like more information about:</p>
+                        <label for=“trvlnws”><input type=“checkbox” name=“interest” id=“trvlnws” value=“Travel”>Travel News</label>
+
+                        <label for=“foodrcp”><input type=“checkbox” name=“interest” id=“foodrcp” value=“Food”>Food Travel</label>
+
+                        <label for=“nutr”><input type=“checkbox” name=“interest” id=“nutr” value=“Recipes”>International Recipes</label> 
+                        
+                        <label for=“questions”> Questions?</label>
+                        
+                        <textarea id=“questions” name=“questions” rows=“5” cols=“35”></textarea>
+
+                    </fieldset>
+                    <input type=“submit” id=“submit” value =“Submit” class=“btn”>
+                </form>   
+
         
             </main>
             <footer>
             <p>&copy;Copyright 2023. All Rights Reserved.</p>
             <p><a href="mailto:latoya.hayes1121@gmail.com"></a>latoya.hayes1121@gmail.com</p>
         </footer>
-   
+        <script src=“scripts/script.js”></script>
     </body>
 </html>
