@@ -1,0 +1,69 @@
+<!-- Mobile nav-->
+<nav class="mobile-nav">
+    <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a></li>
+          <li class="dropdown"><a href="#">Class</a>
+              <div class="dropdown-content">
+                <a href="index.html"> Home</a>
+                <a href="about.html"> About</a>
+                 <a href="news.html">News</a>
+                <a href="contact.html">Contact</a> 
+                <a href="class.html">Class </a>
+                <li class="dropdown"><a href="#">Class</a>
+                   <div class="dropdown-content">
+                        <a href="day 1/index.html">class 1</a>
+                     <a href="day 2/index.html">class 2</a>
+                     <a href="day 3/index.html"> class</a> 3</a>
+                     <a href="day 4/index.html">class 4</a>
+                     <a href="day 5/index.html">class 5</a>
+                     <a href="day 6/index.html">class 6</a>
+                     <a href="day 7/index.html">class 7</a>
+                     <a href="day 8/index.html">class 8</a>
+                     <a href="day 9/index.html">class 9</a>
+                     <a href="day 10/index.html">class 10</a>
+                     <a href="Day 11/index.html">class 11</a>
+                   </div></li>
+              </div>
+      </div>
+      <a class="menu-icon" onclick="hamburger()">
+          <div>&#9776;</div>
+      </a>
+      
+      
+also make <nav="tab-desk"> (regular nav)
+      
+/* CSS */ 		
+      
+      .mobile-nav a {
+color: #fff;
+text-align: center;
+font-size: 2em;
+text-decoration: none;
+padding: 3%;
+display: block;
+}
+
+.mobile-nav a.menu-icon {
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.mobile-nav li {
+color: #000;
+text-align: center;
+font-size: 1.5em;
+text-decoration: none;
+padding: 3%;
+display: block;
+}
+
+.menu-icon div {
+height: 50px;
+width: 50px;
+background-color: #444;
+}
