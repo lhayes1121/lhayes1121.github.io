@@ -522,7 +522,7 @@ main h1 {
     opacity: 0.9;
 }
 
-.frame:hover {
+.frame: hover {
     opacity: 1;
     box-shadow: 8px 8px 10px #808080;
     transform: translateY(10px);
@@ -534,7 +534,7 @@ main h1 {
     margin: 0 2%;
 }
 #about {
-    clear:left;
+    clear: left;
     }
   }
 
@@ -557,10 +557,3 @@ main h1 {
 
  }
  
-
-
-
-
-
-
-    
